@@ -25,7 +25,7 @@
         <h1>for my avatar remains</h1>
       </div>
       <div id="step4" class="step">
-        <h1>with these sage words of guidance</h1>
+        <h1>with words of guidance</h1>
       </div>
       <audio autoplay>
         <source src="sound.ogg" type="audio/ogg">

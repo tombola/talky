@@ -19,7 +19,7 @@ $(document).ready(function() {
     $('#phrase').load("includes/phrase.php");
 
     i = 0
-    var timeout = 1000;
+    var timeout = 800;
     var nextstep = function() {
       $('#step'+i).hide();
       $('#step'+(i+1)).show();
@@ -28,7 +28,7 @@ $(document).ready(function() {
         setTimeout(nextstep, timeout);
       } else {
         action();
-        $('#container').fadeIn(8000);
+        $('#container').fadeIn(2000);
       }
     }
     nextstep();
@@ -36,15 +36,16 @@ $(document).ready(function() {
     var timeout = 4000;
     var action = function() {
       // Do stuff here
-      $('#phrase').load("includes/phrase.php");
+      $('#phrase').load("includes/phrase.php")  ;
         var rNum = (Math.random()*10)-5;  
+        var rNum2 = (Math.random()*10)-5;  
       $("#talky").css( {   
         '-webkit-transform': 'rotate('+rNum+'2deg)',
         '-moz-transform': 'rotate('+rNum+'2deg)',
       } );
       $("#phrase").css( {   
-        '-webkit-transform': 'rotate('+rNum+'2deg)',
-        '-moz-transform': 'rotate('+rNum+'2deg)',
+        '-webkit-transform': 'rotate('+rNum2+'2deg)',
+        '-moz-transform': 'rotate('+rNum2+'2deg)',
       } );
       // var hue = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
       // $('#phrase').animate( { color: hue }, 1000);  
