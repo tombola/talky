@@ -10,8 +10,13 @@
   <body>
     <article>
       <div id="container">
-        <img src="talky.gif" id="talky" />
+        <!-- <img src="talky.gif" id="talky" /> -->
         <span id="phrase"></span>
+        <audio autoplay>
+          <source src="sound.ogg" type="audio/ogg">
+          <source src="sound.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
       </div>
     </article>
   </body>
